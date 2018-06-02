@@ -1,0 +1,50 @@
+.block-networks {
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.block-networks-icons {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-networks-text {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block-networks-text__info {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: $color_gray;
+}
+
+.block-networks-icons-twitter {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -8px -10px;
+  background-color: $color_black;
+}
+
+.block-networks-icons-facebook {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -56px -10px;
+  background-color: $color_black;
+}
+
+.block-networks-icons-pinterest {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -107px -8px;
+  background-color: $color_black;
+}
+
+.block-networks-icons-google {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -155px -8px;
+  background-color: $color_black;
+}

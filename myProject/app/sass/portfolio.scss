@@ -1,0 +1,61 @@
+.block-portfolio {
+  height: 1220px;
+  background-color: $color_light-gray;
+}
+
+.block-portfolio-name {
+  height: 262px;
+}
+
+.block-portfolio-column-image {
+  width: 290px;
+  height: 390px;
+  background-color: $color_white;
+  margin-bottom: 50px;
+}
+.img {
+  height: 300px;
+  width: 290px;
+  display: block;
+}
+
+.block-portfolio-column-image-top-left {
+  @extend .img;
+  background: url("../images/portfolio/ebony&ivory.png") no-repeat;
+  background-position: -60px 0px;
+}
+
+.block-portfolio-column-image-text {
+  width: 290px;
+  text-align: center;
+}
+
+.block-portfolio-column-image-bottom-left {
+  @extend .img;
+  background: url("../images/portfolio/vinyl record.png") no-repeat;
+  background-position: -50px -50px;
+}
+
+.block-portfolio-column-image-top-center {
+  @extend .img;
+  background: url("../images/portfolio/smart stationary.png") no-repeat;
+  background-position: -47px 0px;
+}
+
+.block-portfolio-column-image-bottom-center {
+  @extend .img;
+  background: url("../images/portfolio/treehouse template.png") no-repeat;
+  background-position: -65px 0px;
+}
+
+.block-portfolio-column-image-top-right {
+  @extend .img;
+  background: url("../images/portfolio/clever poster.png") no-repeat;
+  background-position: -165px 0px;
+}
+
+.block-portfolio-column-image-bottom-right{
+  @extend .img;
+  background: url("../images/portfolio/burned logo.png") no-repeat;
+  background-position: -65px 0px;
+}

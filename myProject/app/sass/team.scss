@@ -1,0 +1,105 @@
+.block-team {
+  height: 820px;
+  background-color: $color_light-gray;
+}
+
+.block-team-name {
+  height: 275px;
+}
+
+.block-team-members-foto {
+  width: 220px;
+  height: 220px;
+  border-radius: 220px;
+  background-color: $color_black;
+}
+
+.block-team-members {
+  width: 940px;
+  height: 380px;
+  margin: auto;
+}
+
+.block-team-text {
+  width: 650px;
+  height: 165px;
+  text-align: center;
+}
+
+.block-team-members-info__name {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.block-team-members-info__profession {
+  color: $color_gray;
+  margin-top: 10px;
+}
+
+.block-team-text__describe {
+  color: $color_gray;
+  font-size: 19px;
+}
+
+.info-icons {
+  width: 35px;
+  height: 35px;
+  border: 3px solid $color_black;
+  border-radius: 35px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.block-team-members-info-icons-twitter {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -8px -58px;
+  &:hover {
+    background-position: -8px -10px;
+  }
+}
+
+.block-team-members-info-icons-facebook {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -57px -58px;
+  &:hover {
+    background-position: -56px -10px;
+  }
+}
+
+.block-team-members-info-icons-pinterest {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -107px -58px;
+  &:hover {
+    background-position: -107px -8px;
+  }
+}
+
+.block-team-members-info-icons-google {
+  background: url("../images/sprites/icons.png") no-repeat;
+  background-position: -161px -58px;
+  &:hover {
+    background-position: -155px -8px;
+  }
+}
+
+.info-icons-twitter:hover {
+  background-color: #00aced;
+  border-color: #00aced;
+}
+
+.info-icons-facebook:hover {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.info-icons-pinterest:hover {
+  background-color: #cb2028;
+  border-color: #cb2028;
+}
+
+.info-icons-google:hover {
+  background-color: #d95232;
+  border-color: #d95232;
+}

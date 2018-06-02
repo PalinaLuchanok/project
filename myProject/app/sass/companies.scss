@@ -1,0 +1,58 @@
+.block-company {
+  height: 165px;
+}
+
+.block-company-name {
+  width: 950px;
+  height: 42px;
+  text-align: center;
+}
+
+.block-company-name-container {
+  width: 190px;
+  height: inherit;
+  margin: 0px 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.block-company-name__envato {
+  width: 155px;
+  background: url("../images/sprites/companies.png") no-repeat;
+  background-position: -17px -10px;
+}
+
+.block-company-name__wp {
+  background: url("../images/sprites/companies.png") no-repeat;
+  background-position: -208px -3px;
+}
+
+.block-company-name__ae {
+  background: url("../images/sprites/companies.png") no-repeat;
+  background-position: -30px -54px;
+}
+
+.block-company-name__microlancer {
+  background: url("../images/sprites/companies.png") no-repeat;
+  background-position: -219px -55px;
+}
+
+.block-company-name-top {
+  animation: topBottom 2s linear infinite alternate;
+}
+
+.block-company-name-bottom {
+  animation: topBottom 2s linear infinite alternate-reverse;
+}
+
+@keyframes topBottom {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}

@@ -1,0 +1,157 @@
+.block-welcome {
+  background: url("../images/header/image-header.png") no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.block-home {
+  height: 100ch;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.block-home-top {
+  height: 95px;
+}
+
+.block-home-top-logotype {
+  width: 400px;
+  height: inherit;
+}
+
+.block-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-home-top-logotype__logo {
+  width: 100px;
+  height: inherit;
+  background: url(../images/header/logo.png) no-repeat center;
+}
+
+.block-home-top-navigation {
+  width: 900px;
+  height: auto;
+}
+
+.block-home-top-navigation-container__link {
+  color: $color_white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 12px;
+  cursor: pointer;
+  &:hover {
+    font-style: italic;
+    color: $color_yellow;
+  }
+}
+
+.text-upper {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.block-home-bottom {
+  height: 555px;
+}
+
+.block-home-bottom__welcome {
+  color: $color_white;
+  font-size: 40px;
+  font-style: italic;
+  animation: leftText 2s linear 1;
+}
+
+.text-capital {
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+@keyframes leftText {
+  from {
+    transform: translate(-400px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.block-home-bottom__title {
+  color: $color_white;
+  margin-top: 0px;
+  font-size: 70px;
+  animation: rightText 2s linear 1;
+}
+
+@keyframes rightText {
+  from {
+    transform: translate(200px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.block-home-bottom__button {
+  color: $color_white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 240px;
+  height: 65px;
+  border: 1px solid $color_yellow;
+  border-radius: 5px;
+  background-color: $color_yellow;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.tooltip {
+  position: absolute;
+  background: $color_white;
+  width: 150px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  padding: 10px;
+  text-align: center;
+  color: $color_yellow;
+  text-transform: uppercase;
+}
+
+.tooltip[x-placement='top']{
+  margin-bottom: 5px;
+}
+
+.tooltip[x-placement='bottom']{
+  margin-top: 5px;
+}
+
+.tooltip-arrow {
+  border-color: $color_white;
+  border-style: solid;
+  position: absolute;
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  left: calc(50% - 5px);
+}
+
+.tooltip[x-placement='top'] .tooltip-arrow{
+  bottom: -5px;
+}
+
+.tooltip[x-placement='bottom'] .tooltip-arrow {
+  transform: rotate(180deg);
+  top: -5px;
+}
+
+.tooltip[x-placement='right'] .tooltip-arrow {
+  transform: rotate(90deg);
+  left: -7px;
+}
